@@ -1,0 +1,36 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+  
+{{content}}
+ 
+  
+  {% include footer.html %}
+  <!-- Core -->
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="/assets/vendor/popper/popper.min.js"></script>
+  <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="/assets/vendor/headroom/headroom.min.js"></script>
+  <!-- Optional JS -->
+  <script src="/assets/vendor/onscreen/onscreen.min.js"></script>
+  <script src="/assets/vendor/nouislider/js/nouislider.min.js"></script>
+  <script src="/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <!-- Argon JS -->
+  <script src="/assets/js/main.js?v=1.0.1"></script>
+  <script src="/assets/js/lazyload.js"></script>
+  <script>
+	$(window).ready(function() {
+		$("img.lazy").lazyload({
+			effect : "fadeIn"
+		});
+	});
+  </script>
+</body>
+
+</html>
